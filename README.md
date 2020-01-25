@@ -5,3 +5,5 @@
 - CSS3, HTML5
 - CSS Grid
 - a bit of jQuery :)
+
+https://kopikob.github.io/Bergedorf/
