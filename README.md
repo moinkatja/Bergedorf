@@ -6,4 +6,4 @@
 - CSS Grid
 - a bit of jQuery :)
 
-https://kopikob.github.io/Bergedorf/
+https://moinkatja.github.io/Bergedorf/
