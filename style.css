@@ -5,52 +5,138 @@
 [1200 - 1800] PC
 1800px + : Big desktop
 
-1em = 16px
+1rem = 16px
 */
 
 @import url('https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Arimo');
+
+
+/* --- FONTS --- */
+
+/* arimo-regular - latin */
+@font-face {
+    font-family: 'Arimo';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/arimo-v13-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Arimo Regular'), local('Arimo-Regular'),
+         url('fonts/arimo-v13-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/arimo-v13-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/arimo-v13-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('fonts/arimo-v13-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/arimo-v13-latin-regular.svg#Arimo') format('svg'); /* Legacy iOS */
+}
+
+/* arimo-700 - latin */
+@font-face {
+    font-family: 'Arimo';
+    font-style: normal;
+    font-weight: 700;
+    src: url('fonts/arimo-v13-latin-700.eot'); /* IE9 Compat Modes */
+    src: local('Arimo Bold'), local('Arimo-Bold'),
+         url('fonts/arimo-v13-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/arimo-v13-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/arimo-v13-latin-700.woff') format('woff'), /* Modern Browsers */
+         url('fonts/arimo-v13-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/arimo-v13-latin-700.svg#Arimo') format('svg'); /* Legacy iOS */
+}
+
+/* sulphur-point-regular - latin */
+@font-face {
+    font-family: 'Sulphur Point';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/sulphur-point-v1-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Sulphur Point Regular'), local('SulphurPoint-Regular'),
+         url('fonts/sulphur-point-v1-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/sulphur-point-v1-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/sulphur-point-v1-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('fonts/sulphur-point-v1-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/sulphur-point-v1-latin-regular.svg#SulphurPoint') format('svg'); /* Legacy iOS */
+}
+
+/* sulphur-point-700 - latin */
+@font-face {
+    font-family: 'Sulphur Point';
+    font-style: normal;
+    font-weight: 700;
+    src: url('fonts/sulphur-point-v1-latin-700.eot'); /* IE9 Compat Modes */
+    src: local('Sulphur Point Bold'), local('SulphurPoint-Bold'),
+         url('fonts/sulphur-point-v1-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/sulphur-point-v1-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/sulphur-point-v1-latin-700.woff') format('woff'), /* Modern Browsers */
+         url('fonts/sulphur-point-v1-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/sulphur-point-v1-latin-700.svg#SulphurPoint') format('svg'); /* Legacy iOS */
+}
+
+/* --- Generelles ---  */
+
+html {
+    font-size: 16px;
+}
 
 body {
     background-color: white;
-    font-size: 15px;
     font-family: 'Sulphur Point', sans-serif;
 }
 
-/* Die Seite enthält 6 Sektionen und ist mit CSS Grid gebaut */
-.grid-container {
-    margin-left: 10px;
-    margin-right: 10px;
-    display: grid;  
-    grid-template-rows: repeat(6,fit-content()); /* 6 Reihen */
-    grid-template-columns: 1fr; /* 1 Spalte */
-    padding: 2px 2px 2px 2px;
-  }
+h1 {
+    padding-top: 5.5rem;
+    align-self: center;
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2.3rem;
+}
+
+
+h3 {
+    font-size: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+    color: rgb(58, 102, 190);
+}
 
 .header {
-    height:700px;
+    height: 600px;
     display: grid;
-    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.4), rgba(25, 12, 109, 0.8)), 
+    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.719), rgba(25, 12, 109, 0.8)), 
     url("img/bergedorf.jpg");
-    border-radius: 40px;
     background-size: cover;
-    background-position: top;
     text-align: center; 
-    align-content:center;
+    align-content:top;
     color: white;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
- 
 }
-h1 {
-    font-size: 80px;
+
+.page-section {
+    display: grid;
+    color: white;
+    font-size: 1.3rem;
+    background-color: #a1afc9;
+    text-align: center;
+    padding: 3rem 2rem 3rem 2rem;
 }
-h3 {
-    font-size: 30px;
-} 
-/* Menu für PCs */
+
+.page-section p {
+    text-align: justify;
+}
+
+/* --- GRID --- */
+
+.grid-container {
+    display: grid;  
+    grid-template-rows: repeat(6,fit-content()); /* 6 Reihen */
+    grid-template-columns: 100%; /* 1 Spalte */
+}
+
+/* --- Menu für PCs --- */
+
 .top-menu {
+    text-align: center;
     top: 0px;
     width: 100%;
     position: fixed;
@@ -59,28 +145,32 @@ h3 {
     padding: 10px;
     z-index: 97;
 }
+
 .top-menu:after {
     content: "";
     display: table;
     clear: both;
     z-index: 97;
 }
+
 .menu-main {
     list-style: none;
     margin: 0;
     padding: 0;
     z-index: 97;
-
 }
+
 .menu-main li {
     display: inline-block;
 }
+
 .menu-main a {
     text-decoration: none;
     display: block;
     position: relative;
     line-height: 61px;
-    padding-left: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     font-size: 18px;
     letter-spacing: 2px;
     font-family: 'Arimo', sans-serif;
@@ -90,7 +180,7 @@ h3 {
     z-index: 99;
 }
 
-/* Dekoration für Menu-main (die Punkte oben) */
+/* Dekoration für .menu-main (die Punkte oben) */
 .menu-main a:before {
     content: "";
     width: 9px;
@@ -98,14 +188,18 @@ h3 {
     background: #4ac5eb;
     position: absolute;
     left: 50%;
-    transform: rotate(45deg) translateX(6.5px);
+    border-radius: 50%;
     opacity: 0;
     transition: .3s linear;
     z-index: 99;
 }
-.menu-main a:hover:before {opacity: 1;}
 
-/* Mobile-Menu Styles */
+.menu-main a:hover:before {
+    opacity: 1;
+}
+
+/* --- Mobile-Menu --- */
+
 .mobile-menu {
     align-items: center; 
     justify-content: center; 
@@ -118,18 +212,20 @@ h3 {
     transition: all 0.5s; /* Mobile-Menu Animation*/
 }
 
-/* Media-queries für Mobile-Menu */
-@media (max-width: 1200px) {
+/* --- Media-queries für Mobile-Menu --- */
+
+@media (max-width: 900px) {
+
     .header {
-        height:400px;
+        height: 400px;
     }
+
     .mobile-menu-wrap {
-        padding: 1px 1px 1px 1px;
-        margin: 10px 10px 10px 10px;
-        background-color: rgb(160, 193, 231);
-        border-radius: 40px;
-        text-align: center;
+        background-color:  #bfd4eb;
+        padding: 1rem;
+        width: 100%;
     }
+
     .mobile-menu {
         display: flex;
         position: fixed;
@@ -148,11 +244,12 @@ h3 {
     }
 
     .mobile-menu a {
+        font-family:'Sulphur Point';
         display: block; 
         color: #fff;
         line-height: 50px;
         text-decoration: none;
-        font-family: Roboto;
+        text-transform: uppercase;
         font-size: 20px;
         font-weight: bold;
         letter-spacing: 3px;
@@ -170,9 +267,9 @@ h3 {
     .burger {
         border-radius: 10px;
         background-color: #bfd4eb;
-        width: 80px;
-        height: 80px;
-        margin: 20px auto;
+        width: 60px;
+        height: 60px;
+        margin: 0 auto;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -181,64 +278,51 @@ h3 {
         box-shadow: 2px 2px 5px 0  rgba(73, 101, 153, 0.8);
         z-index: 99;
     }
+
     .burger:hover {
         cursor: pointer;
     }
-  /* Burger-Streifen-Styles */ 
+
+    /* Burger-Streifen-Styles */ 
     .burger span {
         border-radius: 10px;
         display: block;
         transition: all 0.3s;
-        width: 70px;
-        margin: 7px;/* Abstand zwischen den Streifen */
+        width: 50px;
+        margin: 5px;/* Abstand zwischen den Streifen */
         height: 9px;
         background-color: #4ac5eb;
         z-index:200;
     }
-  /* Animation der ersten Burger-Streife */ 
+
+    /* Animation der ersten Burger-Streife */ 
     .first {
-        transform: translate(15px, 3px) rotate(45deg);
+        transform: translate(11px, 3px) rotate(45deg);
         transform-origin: left top;
     }
-  /* Animation der mittleren Burger-Streife */ 
+
+    /* Animation der mittleren Burger-Streife */ 
     .middle {
         transform: scale(0);
     }
-  /* Animation der unteren Burger-Streife */ 
+
+    /* Animation der unteren Burger-Streife */ 
     .last {
-        transform: translate(-6px, -45px) rotate(-45deg);
+        transform: translate(-3px, -36px) rotate(-45deg);
         transform-origin: right bottom;
     }
     .top-menu  {
         display: none;
-     }   
+    }   
     .menu-main {
         display: none;
-  }
+    }
 }
 
-.page-section {
-    display: grid;
-    margin-top: 10px;
-    padding-top: 20px;
-    padding-bottom: 30px;
-    background-color: rgb(160, 193, 231);
-    border-radius: 40px;
-    text-align: center;
-}
+/* --- Section Museen --- */
 
-.page-section2 {
-    background-color: rgb(135, 161, 201);
-}
-
-h4 {
-    font-size: 35px;
-    color: rgb(58, 102, 190);
-}
-
-article {
-    color: white;
-    font-size: 25px;
+#section-museen {
+    background-color: rgb(181, 193, 211);
 }
 
 .image-container {
@@ -265,7 +349,7 @@ article {
     height: 242px;
     opacity: 0.8;
     filter: grayscale(0.6);
-    transition: ease-out 0.6s;
+    transition: ease-out 0.3s;
 }
 
 .image-box img:hover {
@@ -290,7 +374,7 @@ article {
 }
 
 .image-box .image-header {
-    font-size: 20px;
+    font-size: 1.2rem;
     padding-bottom: 5px;
     border-bottom: 2px solid rgba(255,255,255,0.4);
     color: white;
@@ -300,8 +384,8 @@ article {
 
 .image-box p {
     color: rgba(255,255,255,1);
-    font-size: 15px;
-    margin-top: 20px;
+    font-size: 1rem;
+    margin-top: 1.2rem;
     line-height: 24px;
 }
 
@@ -311,7 +395,9 @@ sub {
     color: white;
 }
 
-#shops {
+/* --- Section Geschäfte/Shops --- */
+
+#section-shops {
     background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.4), rgba(25, 12, 109, 0.8)), 
     url("img/shopping.jpg");
 }
@@ -356,6 +442,7 @@ sub {
     border-radius: 20%;
     float:left;
 }
+
 .shop-box p {
     left: 40%;
     text-align: center;
@@ -368,6 +455,8 @@ sub {
 .shop-box img {
     opacity: 0.75;
 }
+
+/* CSS Modal-Windows für Geschäfte-Section */
 
 .modalDialog {
     position: fixed;
@@ -385,21 +474,22 @@ sub {
     display: block;
     pointer-events: auto;
     transition: ease-in 0.5s !important;
-    }
+}
 
 .modalDialog > div {
     width: 400px;
     position: relative;
     margin: 15% auto;
-    padding: 5px 20px 13px 20px;
+    padding: 5px 5px 13px 20px;
     border-radius: 30px;
     background: rgba(255, 255, 255);
     opacity: 0.8;
-    font-size: 20px;     
+    font-size: 1.3rem;     
 }
 
 .modalDialog > div >  h2 {
-    padding-bottom: 5px;
+    padding-top: 1rem;
+    padding-bottom: .5rem;
     color: rgb(62, 42, 150);
 }
 
@@ -428,17 +518,9 @@ sub {
     background: rgb(74, 197, 235); 
 }    
 
-footer {
-    height: 100px;
-    padding-left: 10px;
-    line-height: 0.5;
-    display:grid;
-    color: white !important;
-    background-color: rgb(160, 193, 231);
-    margin-bottom: 10px;
-}
+/* --- Section Cafes & Restaurants --- */
 
-#cafes {
+#section-cafes {
     background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.4), rgba(25, 12, 109, 0.8)), 
     url("img/cafe-bg.jpg");
 }
@@ -469,9 +551,10 @@ footer {
     padding: 0 0 0;
 }
 
-.cafe-box p {
+.cafe-box > p {
     color: rgb(62, 42, 150);
     font-size: 20px;
+    text-align: center;
 }
 
 .cafe-box img {
@@ -479,15 +562,26 @@ footer {
     padding-bottom: 10px;
 }
 
-#links {
-    top: 6px;
-    padding-right: 20px;
-    position: relative;
-    text-align: right;
+
+/* --- Footer --- */
+#footer-section {
+  justify-content: center;
+    display:grid;
+    color: white !important;
+    background-color: rgb(160, 193, 231);
+   padding-top: 1rem;
+   padding-bottom: 1rem;
+   font-size: 1rem;
+}
+
+#footer-section p {
+    padding-top: 1.5rem;
 }
 
 /*Media-queries für CSS-Grids*/
+
 @media (max-width: 1200px) {
+
     .image-container {
         display: grid;
         grid-template-rows: repeat(3, fit-content(1fr));  
@@ -507,7 +601,8 @@ footer {
     }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 800px) {
+
     .image-container {
         display: grid;
         grid-template-rows: repeat(6,fit-content(1fr));  
@@ -523,9 +618,48 @@ footer {
         grid-template-rows: repeat(6,fit-content(1fr));  
         grid-template-columns: 1fr; 
     }
-    #links {
-        top: 0px;
-        position: relative;
-        text-align: center;
+}
+
+@media (max-width: 500px) {
+
+    h1 {
+        font-size: 3rem;
+    }
+    
+    h2 {
+        font-size: 2 rem;
+    }
+    
+    h3 {
+        font-size: 2rem;
+    }
+
+    .image-box {
+        width: 300px; 
+        margin: 20px auto 0;
+    }
+    .image-box img {
+        width: 300px;
+        height: 192px;
+    }
+
+    .image-box .image-content {
+        height: 192px;
+        left: 50%;
+    }
+
+    .image-box p {
+        font-size: .8rem;
+        margin-top: 1rem;
+        line-height: 22px;
+    }
+}
+
+@media (max-width: 325px) {
+
+    .modalDialog > div {
+        width: 300px;
+        font-size: 1.2rem;  
+        padding: 5px 5px 5px 5px;   
     }
 }

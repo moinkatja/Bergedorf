@@ -4,10 +4,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Discover Bergedorf</title>
 </head>
-<body>
+<body>  
+    
+    <!-- --- Desktop menu --- -->
+    <nav class="top-menu">
+        <ul class = "menu-main">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#section-info">Info</a></li>
+            <li><a href="#section-museen">Museen</a></li>
+            <li><a href="#section-shops">Geschäfte</a></li>
+            <li><a href="#section-cafes">Cafés & Restaurants</a></li>
+        </ul> 
+    </nav>
+
+    <!-- --- Mobile menu --- -->
     <div class="mobile-menu-wrap"> 
         <div class="burger"> 
             <span></span>
@@ -17,236 +29,246 @@
         <div class="mobile-menu">
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#museen">Museen</a></li>
-                <li><a href="#shops">Geschäfte</a></li>
-                <li><a href="#cafes">Cafés und Restaurants</a></li>
+                <li><a href="#section-info">Info</a></li>
+                <li><a href="#section-museen">Museen</a></li>
+                <li><a href="#section-shops">Geschäfte</a></li>
+                <li><a href="#section-cafes">Cafés & Restaurants</a></li>
             </ul>
-        </div>   
-    </div>   
+        </div>  
+    </div>
+
+    <!-- --- Main Grid --- -->
     <div class=grid-container>
-        <header id="home" class="header">
-        <nav class="top-menu">
-            <ul class = "menu-main">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#museen">Museen</a></li>
-                <li><a href="#shops">Geschäfte</a></li>
-                <li><a href="#cafes">Cafés und Restaurants</a></li>
-            </ul> 
-        </nav>
-        <h1>Discover Bergedorf!</h1>
-        <h3>Es gibt viel zu entdecken...</h3>
-        </header>
-        <section class="page-section">
-            <article name="mainArticle" id=”mainArticle”>
-                <h4>Über Bergedorf</h4>
-                Im Osten Hamburgs gibt es viel zu entdecken! Bergedorf war von 1873 bis 1937 eine eigene Stadt. <br>
-                Hier findest Du die Tipps, was Du in Bergedorf unternehmen kannst.<br><br>
-                Viel Spaß! 
-            </article> 
+
+        <!-- --- Section Home, Header --- -->
+
+        <section id="home" class="header">
+            <h1>Discover Bergedorf!</h1>
+            <h2>Es gibt viel zu entdecken...</h2>
         </section>
-        <section id = "museen" class="page-section page-section2">
-            <article>
-                <h4>Museen</h4>
-                In Bergedorf und in der Nähe...<br>
-                Klick auf das Bild, um mehr zu erfahren.
-                <div class="image-container">
-                    <div class="image-box"> 
-                        <a href="https://www.bergedorfer-museumslandschaft.de" target="_blank"> 
-                            <img src="img/bergedorf.jpg" alt="Bergedorf">
-                            <div class="image-content">
-                            <h3 class="image-header">Bergedorfer Schloss</h3>
-                            <p>Das einzige verbliebene Schloss in Hamburg!</p>
-                            </div>  
-                        </a>
-                    </div> 
-                    <div class="image-box">
-                        <a href="https://stpetriundpauli-bergedorf.de/" target="_blank">
-                            <img src="img/petri.jpg" alt="St. Petri">
-                            <div class="image-content">
-                                <h3 class="image-header">St. Petri und Pauli-Kirche</h3>
-                                <p>Stammt von 1502!</p>
-                            </div>
-                        </a>
-                    </div> 
-                    <div class="image-box"> 
-                        <a href= "https://www.herzogtum-lauenburg.de/e-fahrt-mit-der-historischen-dampfeisenbahn-karoline" target="_blank">      
-                            <img src="img/lok.jpg" alt="Karoline">
-                            <div class="image-content">
-                                <h3 class="image-header">Dampflok "Karoline"</h3>
-                                <p>Einen Ausflug mit "Karoline" machen</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="image-box">
-                        <a href="http://www.bergedorf-info.de/INFO/hassehaus.html" target="_blank">
-                            <img src="img/petri.jpg" alt="St. Petri">
-                            <div class="image-content">
-                                <h3 class="image-header">Hasse-Haus</h3>
-                                <p>Das Geburtshaus des Musikers Johann Adolf Hasse</p>
-                            </div> 
-                        </a>
-                    </div>
-                    <div class="image-box">
-                        <a href="https://www.hamburg.de/boberger-niederung/" target="_blank">
-                            <img src="img/dune.jpg" alt="Boberger Düne">
-                            <div class="image-content">
-                                <h3 class="image-header">Boberger Düne</h3>
-                                <p>Naturschutz-gebiet Boberger Niederung  </p> 
-                            </div> 
-                        </a>
-                        <sub>S-Bahn "Mittlerer Landweg" oder Bus 221</sub> 
-                    </div> 
-                    <div class="image-box">
-                        <a href="https://www.gartenderschmetterlinge.de" target="_blank">
-                            <img src="img/schmetterling.jpg" alt="Schmetterlingshaus">
-                            <div class="image-content">
-                                <h3 class="image-header">Garten der Schmetter-linge</h3>
-                                <p>Mitten im Wald die Schmetterlinge bestaunen!</p>
-                            </div>
-                        </a> 
-                        <sub>S-Bahn "Aumühle"</sub>
-                    </div> 
-                </div>
-            </article>
-        </section> 
-        <section id = "shops" class="page-section"> 
-            <article ><h4>Geschäfte</h4>
-                <div class="shop-container">
-                    <a href="#openModal1"> <div class = "shop-box"><img src="img/papyrus.png" alt="Papyrus" class="img-rund"> <p>Papyrus</p>Die Papeterie</div></a>
-                    <div id="openModal1" class="modalDialog">
-                        <div>
-                            <a href="#close" title="Schließen" class="close">x</a>
-                            <h2>Papyrus</h2>
-                            <p><strong>Adresse: </strong>Sachsentor 65, 21029 Hamburg </p>
-                            <p><strong>Web-Seite: </strong><a href="https://www.papyrus-hamburg.de" target="_blank">Papyrus Hamburg</a> </p>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d813.545706319757!2d10.213958884658338!3d53.48706482744774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b1f2885056d757%3A0x3c21507e04481b4d!2sPapyrus%20B.%20Kiefat%20e.K.!5e0!3m2!1sru!2sde!4v1575286086180!5m2!1sru!2sde" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                        </div>
-                    </div>       
-                    <a href="#openModal2"><div class = "shop-box"> <img src="img/mode1.png" alt="Malibu Mode" class="img-rund"> <p>Malibu</p> Jeans & Fashion Store </div> </a>
-                    <div id="openModal2" class="modalDialog">
-                        <div>
-                            <a href="#close" title="Schließen" class="close"> x</a>
-                            <h2>Malibu</h2>
-                            <p><strong>Adresse: </strong>Sachsentor Passage 29-31, Sachsentor, 21029 Hamburg</p>
-                            <p><strong>Web-Seite: </strong> <a href="https://www.malibu-online.de" target="_blank">Malibu</a></p>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2373.903446112576!2d10.21123531607024!3d53.48805498000897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b1f2891ad76511%3A0x39dc235f049c6de!2sMalibu%20Sportswear%20Inh.%20Manfred%20Stoesky!5e0!3m2!1sru!2sde!4v1575299817228!5m2!1sru!2sde" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                        </div>
-                    </div>    
-                    <a href="#openModal3"><div class = "shop-box"> <img src="img/ring.png" alt="Jean Koch" class="img-rund"> <p>Jean Koch</p> Goldschmiede Juwelier</div></a>
-                    <div id="openModal3" class="modalDialog">
-                        <div>
-                            <a href="#close" title="Schließen" class="close">x</a>
-                            <h2>Jean Koch</h2>
-                            <p><strong>Adresse: </strong>Sachsentor 6, 21029 Hamburg </p> 
-                            <p><strong>Web-Seite: </strong><a href="https://www.jeankoch.de" target="_blank">Jean Koch</a></p>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9495.497365497555!2d10.2114799!3d53.488575!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6794758786dc33ad!2sJean%20Koch%20Goldschmiede%20Juwelier!5e0!3m2!1sru!2sde!4v1575300113022!5m2!1sru!2sde" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>  
-                        </div>
-                    </div> 
-                    <a href="#openModal4"><div class = "shop-box"> <img src="img/mode2.png" alt="Skandinavische Mode" class="img-rund"> <p>Alberte & Albertine</p> Skandinavische Anziehsachen</div></a>
-                    <div id="openModal4" class="modalDialog">
-                        <div>
-                            <a href="#close" title="Schließen" class="close">x</a>
-                            <h2>Alberte & Albertine</h2>
-                            <p><strong>Adresse: </strong>Bergedorfer Schloßstraße 14, 21029 Hamburg</p>
-                            <p><strong>Web-Seite: </strong><a href="http://alberte.de" target="_blank">Alberte & Albertine</a></p>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9495.707582609644!2d10.214624!3d53.487636!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa71727fcb3dab891!2sAlberte%20%26%20Albertine!5e0!3m2!1sru!2sde!4v1575300345226!5m2!1sru!2sde" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                        </div>
-                    </div> 
-                    <a href="#openModal5"><div class = "shop-box"> <img src="img/lampe.png" alt="Möbelladen" class="img-rund"> <p>Mein Möbelladen</p> Möbel & Deko </div></a>
-                    <div id="openModal5" class="modalDialog">
-                        <div>
-                            <a href="#close" title="Schließen" class="close">x</a>
-                            <h2>Mein Möbelladen</h2>
-                            <p><strong>Adresse: </strong>Bergedorfer Schloßstraße 13, 21029 Hamburg</p>
-                            <p><strong>Web-Seite: </strong><a href="http://www.mein-moebelladen.de" target="_blank">Mein Möbelladen</a> </p>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9495.510574102585!2d10.213359!3d53.488516!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x753c7aa1fd006d48!2sM%C3%B6belladen%20Mein!5e0!3m2!1sru!2sde!4v1575300522633!5m2!1sru!2sde" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                        </div>
-                    </div> 
-                    <a href="#openModal6"> <div class = "shop-box"> <img src="img/sessel.png" alt="Marks Einrichtungen" class="img-rund"> <p>Marks</p> Hochwertiges Möbel-Design </div> </a>
-                    <div id="openModal6" class="modalDialog">
-                        <div>
-                            <a href="#close" title="Schließen" class="close">x</a>
-                            <h2>Marks</h2>
-                            <p><strong>Adresse: </strong>Am Brink 2-4, 21029 Hamburg</p>
-                            <p><strong>Web-Seite: </strong><a href="https://www.marks-einrichtungen.de" target="_blank">Marks</a></p>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9496.049722856147!2d10.2164299!3d53.4861077!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3406580d722d2ff9!2sMARKS%20Facilities%20GmbH%20%26%20Co.%20KG!5e0!3m2!1sru!2sde!4v1575301461951!5m2!1sru!2sde" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                        </div>
-                    </div> 
-                    <a href="#openModal7"><div class = "shop-box"> <img src="img/teddy.png" alt="Hartfelder" class="img-rund"><p>Hartfelder</p> Marken- und Qualitätsspielzeug </div></a>
-                    <div id="openModal7" class="modalDialog">
-                        <div>
-                            <a href="#close" title="Schließen" class="close">x</a>
-                            <h2>Hartfelder</h2>
-                            <p><strong>Adresse: </strong>Kupferhof 1, 21029 Hamburg</p>
-                            <p><strong>Web-Seite: </strong><a href="https://www.hartfelder-spiel.de" target="_blank">Hartfelder Spielzeug</a></p>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9495.518633585452!2d10.2103801!3d53.48848!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf761cf7251bef871!2sHartfelder%20Nils!5e0!3m2!1sru!2sde!4v1575301600518!5m2!1sru!2sde" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                        </div>
-                    </div> 
-                    <a href="#openModal8"><div class = "shop-box"><img src="img/body.png" alt="Kinderschloss" class="img-rund"><p>Kinderschloss</p> Kinderbekleidung & Spielzeug </div></a>
-                    <div id="openModal8" class="modalDialog">
-                        <div>
-                            <a href="#close" title="Schließen" class="close">x</a>
-                            <h2>Kinderschloss</h2>
-                            <p><strong>Adresse: </strong>Bergedorfer Schloßstraße 10, 21029 Hamburg</p>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9495.622533416426!2d10.2141977!3d53.4880159!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd50d12f9d12719c3!2sKinderschloss%20Mode%20f%C3%BCr%20Kinder!5e0!3m2!1sru!2sde!4v1575301690424!5m2!1sru!2sde" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                        </div>
-                    </div>    
+
+        <!-- --- Section Info --- -->
+
+        <section id="section-info" class="page-section">
+            <h3>Über Bergedorf</h3>
+            <p>Im Osten Hamburgs gibt es viel zu entdecken! Bergedorf war von 1873 bis 1937 eine eigene Stadt. 
+            Hier findest Du die Tipps, was Du in Bergedorf unternehmen kannst.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci libero necessitatibus, aut maxime voluptatem quod sapiente. Quam labore, quae soluta ipsum, repudiandae at, vitae possimus eveniet maxime corrupti ut repellat?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe assumenda eius maiores consequuntur animi ipsam quia, provident repudiandae unde incidunt voluptates. Incidunt totam accusantium et, provident nemo assumenda iure repellendus consequatur fuga quam placeat, dolorum enim expedita. Corporis atque similique accusantium perferendis? Fugiat autem inventore alias vero dolorem impedit quos similique accusamus sint totam quam, aperiam temporibus quo unde magni expedita nemo ex veniam atque, quis adipisci? Quisquam magni pariatur blanditiis laborum iure ea, sit veritatis itaque dolor! Id quis, nobis, sit consectetur tempora dignissimos ad voluptatibus praesentium vel autem, libero nisi deserunt ea ex officia perspiciatis maiores optio commodi.
+            <br>
+            Viel Spaß! </p>
+        </section>
+
+        <!-- --- Section Museen --- -->
+        <section id = "section-museen" class="page-section">
+            <h3>Museen</h3>
+            <p>In Bergedorf und in der Nähe...
+            Klick auf das Bild, um mehr zu erfahren. <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque optio sunt laborum eius. Itaque facilis nemo fugiat aliquid, neque qui debitis officiis placeat unde sed explicabo? Minus aliquid reiciendis soluta! </p>
+            <div class="image-container">
+                <div class="image-box"> 
+                    <a href="https://www.bergedorfer-museumslandschaft.de" target="_blank"> 
+                        <img src="img/bergedorf.jpg" alt="Bergedorf">
+                        <div class="image-content">
+                        <h2 class="image-header">Bergedorfer Schloss</h2>
+                        <p>Das einzige verbliebene Schloss in Hamburg!</p>
+                        </div>  
+                    </a>
                 </div> 
-            </article>                    
-        </section>
-        <section id = "cafes" class="page-section page-section2">
-            <article ”><h4>Cafés und Restaurants</h4>
-                <div class="cafe-container">
-                    <div class="cafe-box">  
-                        <img src="img/burger.png" alt="Burger"> <img src="img/fisch.png" alt="Fisch"> 
-                        <p>Burger</p>
-                        <ul><li><a href="https://www.jim-block.de/restaurant-bergedorf.html" target="_blank">Jim Block</a></li></ul>
-                        <p>Fisch & Sushi</p>
-                        <ul><li><a href="http://www.sushibar-bergedorf.de" target="_blank">Sushibar Bergedorf</a></li></ul>
-                    </div> 
-                    <div class="cafe-box">   
-                        <img src="img/tapas.png" alt="Tapas"> 
-                        <p>Italienisch & Spanisch</p>
-                        <ul>
-                            <li><a href = "https://www.facebook.com/Santa-Lucia-211905902183669/" target="_blank">Santa Lucia</a></li>
-                            <li><a href = "https://www.locanda-riva.de" target="_blank">Locanda Riva</a></li>
-                            <li><a href= "https://de.vapiano.com/de/nc/restaurants/detail/restaurant-details/-4f6edcb91c/" target="_blank">Vapiano</a></li>
-                            <li><a href = "https://de-de.facebook.com/TrattoriaOlivoHamburg" target="_blank">Trattoria Olivo</a></li>
-                            <li><a href= "http://www.mamaison-bergedorf.de/index.html"  target="_blank">Ma Maison</a></li>
-                        </ul>
-                    </div>
-                    <div class="cafe-box"> 
-                        <img src="img/cafe.png" alt="Café"> <img src="img/brot.png" alt="Brot"> 
-                        <p>Cafés</p>
-                        <ul>
-                            <li><a href="https://www.cafe-chrysander.de"  target="_blank">Café Chrysander</a></li>
-                            <li><a href="https://www.cafelapetiterue.de" target="_blank">Café La Petite Rue</a></li>
-                        </ul>
-                        <p>Brot & mehr</p>
-                        <ul>
-                            <li><a href="https://www.brotzeit-bergedorf.de" target="_blank">Brotzeit</a></li>
-                            <li><a href="https://feine-macarons.de/" target="_blank">Feine Macarons</a></li>
-                        </ul>     
-                    </div>
-                    <div class="cafe-box"> 
-                        <img src="img/restaurant.png" alt="Restaurant"> 
-                        <p>Sonstiges</p>
-                        <ul>
-                            <li><a href="https://www.block-house.de/restaurants/block-house-restaurants-standorte/block-house-restaurant-details/block-house-bergedorf/" target="_blank">Block House</a></li>
-                            <li><a href="http://www.fidelio-restaurant.de" target="_blank">Fidelio</a></li>
-                        </ul>
-                    </div>
+                <div class="image-box">
+                    <a href="https://stpetriundpauli-bergedorf.de/" target="_blank">
+                        <img src="img/petri.jpg" alt="St. Petri">
+                        <div class="image-content">
+                            <h2 class="image-header">St. Petri und Pauli-Kirche</h2>
+                            <p>Stammt von 1502!</p>
+                        </div>
+                    </a>
+                </div> 
+                <div class="image-box"> 
+                    <a href= "https://www.herzogtum-lauenburg.de/e-fahrt-mit-der-historischen-dampfeisenbahn-karoline" target="_blank">      
+                        <img src="img/lok.jpg" alt="Karoline">
+                        <div class="image-content">
+                            <h2 class="image-header">Dampflok "Karoline"</h2>
+                            <p>Einen Ausflug mit "Karoline" machen</p>
+                        </div>
+                    </a>
                 </div>
-            </article> 
+                <div class="image-box">
+                    <a href="http://www.bergedorf-info.de/INFO/hassehaus.html" target="_blank">
+                        <img src="img/petri.jpg" alt="St. Petri">
+                        <div class="image-content">
+                            <h2 class="image-header">Hasse-Haus</h2>
+                            <p>Das Geburtshaus des Musikers Johann Adolf Hasse</p>
+                        </div> 
+                    </a>
+                </div>
+                <div class="image-box">
+                    <a href="https://www.hamburg.de/boberger-niederung/" target="_blank">
+                        <img src="img/dune.jpg" alt="Boberger Düne">
+                        <div class="image-content">
+                            <h2 class="image-header">Boberger Düne</h2>
+                            <p>Naturschutz-gebiet Boberger Niederung  </p> 
+                        </div> 
+                    </a>
+                    <sub>S-Bahn "Mittlerer Landweg" oder Bus 221</sub> 
+                </div> 
+                <div class="image-box">
+                    <a href="https://www.gartenderschmetterlinge.de" target="_blank">
+                        <img src="img/schmetterling.jpg" alt="Schmetterlingshaus">
+                        <div class="image-content">
+                            <h2 class="image-header">Garten der Schmetter-linge</h2>
+                            <p>Mitten im Wald die Schmetterlinge bestaunen!</p>
+                        </div>
+                    </a> 
+                    <sub>S-Bahn "Aumühle"</sub>
+                </div> 
+            </div>
+        </section> 
+
+        <!-- --- Section Geschäfte --- -->
+
+        <section id = "section-shops" class="page-section"> 
+            <h3>Geschäfte</h3>
+            <div class="shop-container">
+                <a href="#openModal1"> <div class = "shop-box"><img src="img/papyrus.png" alt="Papyrus" class="img-rund"> <p>Papyrus</p>Die Papeterie</div></a>
+                <div id="openModal1" class="modalDialog">
+                    <div class="modalSize">
+                        <a href="#close" title="Schließen" class="close">x</a>
+                        <h2>Papyrus</h2>
+                        <p><strong>Adresse: </strong>Sachsentor 65, 21029 Hamburg </p>
+                        <p><strong>Web-Seite: </strong><a href="https://www.papyrus-hamburg.de" target="_blank">Papyrus Hamburg</a> </p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d813.545706319757!2d10.213958884658338!3d53.48706482744774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b1f2885056d757%3A0x3c21507e04481b4d!2sPapyrus%20B.%20Kiefat%20e.K.!5e0!3m2!1sru!2sde!4v1575286086180!5m2!1sru!2sde" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    </div>
+                </div>       
+                <a href="#openModal2"><div class = "shop-box"> <img src="img/mode1.png" alt="Malibu Mode" class="img-rund"> <p>Malibu</p> Jeans & Fashion Store </div> </a>
+                <div id="openModal2" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Schließen" class="close"> x</a>
+                        <h2>Malibu</h2>
+                        <p><strong>Adresse: </strong>Sachsentor Passage 29-31, Sachsentor, 21029 Hamburg</p>
+                        <p><strong>Web-Seite: </strong> <a href="https://www.malibu-online.de" target="_blank">Malibu</a></p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2373.903446112576!2d10.21123531607024!3d53.48805498000897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b1f2891ad76511%3A0x39dc235f049c6de!2sMalibu%20Sportswear%20Inh.%20Manfred%20Stoesky!5e0!3m2!1sru!2sde!4v1575299817228!5m2!1sru!2sde" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    </div>
+                </div>    
+                <a href="#openModal3"><div class = "shop-box"> <img src="img/ring.png" alt="Jean Koch" class="img-rund"> <p>Jean Koch</p> Goldschmiede Juwelier</div></a>
+                <div id="openModal3" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Schließen" class="close">x</a>
+                        <h2>Jean Koch</h2>
+                        <p><strong>Adresse: </strong>Sachsentor 6, 21029 Hamburg </p> 
+                        <p><strong>Web-Seite: </strong><a href="https://www.jeankoch.de" target="_blank">Jean Koch</a></p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9495.497365497555!2d10.2114799!3d53.488575!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6794758786dc33ad!2sJean%20Koch%20Goldschmiede%20Juwelier!5e0!3m2!1sru!2sde!4v1575300113022!5m2!1sru!2sde" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>  
+                    </div>
+                </div> 
+                <a href="#openModal4"><div class = "shop-box"> <img src="img/mode2.png" alt="Skandinavische Mode" class="img-rund"> <p>Alberte & Albertine</p> Skandinavische Anziehsachen</div></a>
+                <div id="openModal4" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Schließen" class="close">x</a>
+                        <h2>Alberte & Albertine</h2>
+                        <p><strong>Adresse: </strong>Bergedorfer Schloßstraße 14, 21029 Hamburg</p>
+                        <p><strong>Web-Seite: </strong><a href="http://alberte.de" target="_blank">Alberte & Albertine</a></p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9495.707582609644!2d10.214624!3d53.487636!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa71727fcb3dab891!2sAlberte%20%26%20Albertine!5e0!3m2!1sru!2sde!4v1575300345226!5m2!1sru!2sde" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    </div>
+                </div> 
+                <a href="#openModal5"><div class = "shop-box"> <img src="img/lampe.png" alt="Möbelladen" class="img-rund"> <p>Mein Möbelladen</p> Möbel & Deko </div></a>
+                <div id="openModal5" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Schließen" class="close">x</a>
+                        <h2>Mein Möbelladen</h2>
+                        <p><strong>Adresse: </strong>Bergedorfer Schloßstraße 13, 21029 Hamburg</p>
+                        <p><strong>Web-Seite: </strong><a href="http://www.mein-moebelladen.de" target="_blank">Mein Möbelladen</a> </p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9495.510574102585!2d10.213359!3d53.488516!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x753c7aa1fd006d48!2sM%C3%B6belladen%20Mein!5e0!3m2!1sru!2sde!4v1575300522633!5m2!1sru!2sde" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    </div>
+                </div> 
+                <a href="#openModal6"> <div class = "shop-box"> <img src="img/sessel.png" alt="Marks Einrichtungen" class="img-rund"> <p>Marks</p> Hochwertiges Möbel-Design </div> </a>
+                <div id="openModal6" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Schließen" class="close">x</a>
+                        <h2>Marks</h2>
+                        <p><strong>Adresse: </strong>Am Brink 2-4, 21029 Hamburg</p>
+                        <p><strong>Web-Seite: </strong><a href="https://www.marks-einrichtungen.de" target="_blank">Marks</a></p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9496.049722856147!2d10.2164299!3d53.4861077!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3406580d722d2ff9!2sMARKS%20Facilities%20GmbH%20%26%20Co.%20KG!5e0!3m2!1sru!2sde!4v1575301461951!5m2!1sru!2sde" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    </div>
+                </div> 
+                <a href="#openModal7"><div class = "shop-box"> <img src="img/teddy.png" alt="Hartfelder" class="img-rund"><p>Hartfelder</p> Marken- und Qualitätsspielzeug </div></a>
+                <div id="openModal7" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Schließen" class="close">x</a>
+                        <h2>Hartfelder</h2>
+                        <p><strong>Adresse: </strong>Kupferhof 1, 21029 Hamburg</p>
+                        <p><strong>Web-Seite: </strong><a href="https://www.hartfelder-spiel.de" target="_blank">Hartfelder Spielzeug</a></p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9495.518633585452!2d10.2103801!3d53.48848!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf761cf7251bef871!2sHartfelder%20Nils!5e0!3m2!1sru!2sde!4v1575301600518!5m2!1sru!2sde" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    </div>
+                </div> 
+                <a href="#openModal8"><div class = "shop-box"><img src="img/body.png" alt="Kinderschloss" class="img-rund"><p>Kinderschloss</p> Kinderbekleidung & Spielzeug </div></a>
+                <div id="openModal8" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Schließen" class="close">x</a>
+                        <h2>Kinderschloss</h2>
+                        <p><strong>Adresse: </strong>Bergedorfer Schloßstraße 10, 21029 Hamburg</p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9495.622533416426!2d10.2141977!3d53.4880159!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd50d12f9d12719c3!2sKinderschloss%20Mode%20f%C3%BCr%20Kinder!5e0!3m2!1sru!2sde!4v1575301690424!5m2!1sru!2sde" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    </div>
+                </div>    
+            </div>          
         </section>
-        <footer class="page-section">  
-            <div id="links"><a href="#">Impressum</a> || <a href="#">Datenschutz</a> || <a href="#">AGB</a></div> <br><br>
-                <p>© 2019, Katja Blau </p>
-                <p>Icons sind von <a href="https://icons8.de/" target = "_blank">icons8</a>, Bilder von <a href="https://pixabay.com/" target = "_blank">pixabay</a></p>
+
+        <!-- --- Section Cafes & Restaurants --- -->
+
+        <section id = "section-cafes" class="page-section page-section2">
+            <h3>Cafés und Restaurants</h3>
+            <div class="cafe-container">
+                <div class="cafe-box">  
+                    <img src="img/burger.png" alt="Burger"> <img src="img/fisch.png" alt="Fisch"> 
+                    <p>Burger</p>
+                    <ul><li><a href="https://www.jim-block.de/restaurant-bergedorf.html" target="_blank">Jim Block</a></li></ul>
+                    <p>Fisch & Sushi</p>
+                    <ul><li><a href="http://www.sushibar-bergedorf.de" target="_blank">Sushibar Bergedorf</a></li></ul>
+                </div> 
+                <div class="cafe-box">   
+                    <img src="img/tapas.png" alt="Tapas"> 
+                    <p>Italienisch & Spanisch</p>
+                    <ul>
+                        <li><a href = "https://www.facebook.com/Santa-Lucia-211905902183669/" target="_blank">Santa Lucia</a></li>
+                        <li><a href = "https://www.locanda-riva.de" target="_blank">Locanda Riva</a></li>
+                        <li><a href= "https://de.vapiano.com/de/nc/restaurants/detail/restaurant-details/-4f6edcb91c/" target="_blank">Vapiano</a></li>
+                        <li><a href = "https://de-de.facebook.com/TrattoriaOlivoHamburg" target="_blank">Trattoria Olivo</a></li>
+                        <li><a href= "http://www.mamaison-bergedorf.de/index.html"  target="_blank">Ma Maison</a></li>
+                    </ul>
+                </div>
+                <div class="cafe-box"> 
+                    <img src="img/cafe.png" alt="Café"> <img src="img/brot.png" alt="Brot"> 
+                    <p>Cafés</p>
+                    <ul>
+                        <li><a href="https://www.cafe-chrysander.de"  target="_blank">Café Chrysander</a></li>
+                        <li><a href="https://www.cafelapetiterue.de" target="_blank">Café La Petite Rue</a></li>
+                    </ul>
+                    <p>Brot & mehr</p>
+                    <ul>
+                        <li><a href="https://www.brotzeit-bergedorf.de" target="_blank">Brotzeit</a></li>
+                        <li><a href="https://feine-macarons.de/" target="_blank">Feine Macarons</a></li>
+                    </ul>     
+                </div>
+                 <div class="cafe-box"> 
+                    <img src="img/restaurant.png" alt="Restaurant"> 
+                    <p>Sonstiges</p>
+                    <ul>
+                        <li><a href="https://www.block-house.de/restaurants/block-house-restaurants-standorte/block-house-restaurant-details/block-house-bergedorf/" target="_blank">Block House</a></li>
+                        <li><a href="http://www.fidelio-restaurant.de" target="_blank">Fidelio</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- --- Footer --- -->
+
+        <footer id="footer-section" class="page-section">  
+            <div><a href="#">Impressum</a> || <a href="#">Datenschutz</a> || <a href="#">AGB</a></div> 
+            <p>© 2019, Katja Blau. Icons sind von <a href="https://icons8.de/" target = "_blank">icons8</a>, Bilder von <a href="https://pixabay.com/" target = "_blank">pixabay</a></p>
         </footer>
     </div>
-    <script src="jquery-3.4.1.js"></script>
-    <script src="script.js"></script>
+    
+    <script type="" src="jquery-3.4.1.js"></script>
+    <script type="" src="script.js"></script>
 </body>     
 </html>
 
